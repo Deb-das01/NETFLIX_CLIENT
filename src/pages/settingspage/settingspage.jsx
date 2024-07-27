@@ -32,7 +32,7 @@ const Setting = () => {
   const handleSaveClick = async (field) => {
     try {
       const response = await axios.put(
-        `/users/${user._id}`,
+        `https://netflix-mern-backend.onrender.com/api/users/${user._id}`,
         { [field]: formData[field] },
         {
           headers: {
