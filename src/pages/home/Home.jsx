@@ -43,8 +43,7 @@ const Home = ({type}) => {
     <div className='home'>
       <Navbar />
       <Featured type={type} setGenre={setGenre} />
-      {lists
-        .filter((list) => list.title !== 'Popular Movies' && list.title !== 'Popular Webseries')
+      {lists.filter((list) => list.title !== 'Popular Movies' && list.title !== 'Popular Webseries')
         .map((list) => (
           <List key={list._id} list={list} />
         ))}
