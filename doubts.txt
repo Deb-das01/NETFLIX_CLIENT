@@ -1,0 +1,20 @@
+Q.Difference between CSS and SCSS file?
+
+sol:    *Syntax: CSS follows a plain-text syntax, whereas SCSS follows a more structured syntax with additional features such as variables, nesting, and mixins.
+        *Variables: SCSS allows you to define variables to store commonly used values such as colors, font sizes, and spacing, whereas CSS does not.
+        *Nesting: SCSS allows you to nest selectors within other selectors, making it easier to write and read complex stylesheets, whereas CSS requires you to write each selector separately.
+        *Mixins: SCSS allows you to create reusable code snippets using mixins, which are like functions in programming languages. CSS does not provide this functionality.
+        *File Extension: CSS files use the .css file extension, while SCSS files use the .scss file extension.
+        *Compilation: CSS files are interpreted by web browsers directly, whereas SCSS files must be preprocessed into standard CSS files using a preprocessor such as Sass.
+        *SCSS contains all the features of CSS and contains more features that are not present in CSS which makes it a good choice for developers to use it.
+        *SCSS offers variables, you can shorten your code by using variables. It is a great advantage over conventional CSS.
+
+Q. What is JSX?
+
+sol:        React JSX is a syntax extension of JavaScript for writing React Code in a simple way. 
+            Using JSX it is easier to create reusable UI components with fewer lines of code in a template-type language with the power of JavaScript.
+
+            const ele = <h1>This is sample JSX</h1>;
+
+            This is called JSX (JavaScript XML), it somewhat looks like HTML and also uses a JavaScript-like variable but is neither HTML nor JavaScript. 
+            With the help of JSX, we have directly written the HTML syntax in JavaScript.

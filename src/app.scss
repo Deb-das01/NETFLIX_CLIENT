@@ -1,0 +1,26 @@
+// The :root below signifies a level where the code under this section can be accessed globally
+:root{
+    --main-color: #0b0b0b
+}
+
+//this signifies that the buttons with a particular link with it should have the following properties
+.link {
+    color: inherit;//this means inherit the color from the parent i.e dont change the color
+    text-decoration: none;//this means that set the text-decoration to none i.e dont change the text decoration
+  }
+  
+
+//below code is to support responsive devices like mobile or tablet etc
+  @mixin tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+
+  

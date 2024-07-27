@@ -1,0 +1,5 @@
+.home{
+    // var(--main-color)-> this indicates to the value of the --main-color somewhere declared globally
+    background-color: var(--main-color);
+    overflow: hidden;
+}

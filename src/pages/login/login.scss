@@ -1,0 +1,127 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://blog.vpncity.com/wp-content/uploads/2020/01/xx.png");
+    background-size: cover;
+    position: relative;
+  
+    .top {
+      .wrapper {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        .logo {
+          height: 40px;
+        }
+      }
+    }
+  
+    .container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+  
+      form {
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        border-radius: 5px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+  
+        input {
+          height: 40px;
+          border-radius: 5px;
+          background-color: gray;
+          color: white;
+          padding-left: 10px;
+  
+          &::placeholder {
+            color: lightgray;
+          }
+        }
+  
+        button {
+          height: 40px;
+          border-radius: 5px;
+          background-color: red;
+          color: white;
+          border: none;
+          font-size: 18px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+  
+        span {
+          color: lightgray;
+          b {
+            color: white;
+          }
+        }
+      }
+    }
+    .signupButton {
+      background-color: #ff4d4f; 
+      border: 1px solid #ff4d4f; 
+      border-radius: 3px; 
+      color: #fff; 
+      font-family: Arial, sans-serif; 
+      font-size: 10px; 
+      padding: 4px 10px; 
+      cursor: pointer;
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s; 
+    }
+    
+    .signupButton:hover {
+      background-color: #e63946;
+      border-color: #e63946; 
+    }
+    .errorPopup {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 0, 0, 0.9);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      z-index: 1000;
+      animation: slideDown 0.5s ease-in-out, fadeOut 0.5s ease-in-out 2.5s forwards;
+    }
+  
+    @keyframes slideDown {
+      0% {
+        top: -50px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+  
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
