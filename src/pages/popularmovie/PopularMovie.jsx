@@ -13,7 +13,7 @@ const Popularmovie = () => {
   useEffect(() => {
     const fetchPopularLists = async () => {
       try {
-        const res = await axios.get('lists', {
+        const res = await axios.get('https://netflix-mern-backend.onrender.com/api/lists', {
           headers: {
             token:
               "Bearer " + JSON.parse(localStorage.getItem("user")).accessToken,
