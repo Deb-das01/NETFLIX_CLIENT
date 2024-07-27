@@ -31,6 +31,7 @@ const Home = ({type}) => {
             },
           }
         );
+        console.log('API response:', res.data);
         setLists(res.data);
       } catch (err) {
         console.log(err);
