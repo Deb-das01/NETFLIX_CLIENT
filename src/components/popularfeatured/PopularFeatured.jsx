@@ -25,7 +25,7 @@ export default function PopularFeatured({ type, setGenre, popularMoviesList, pop
         if (randomContent) {
           // Fetch details of the selected movie from the backend
           const idx=Math.floor(Math.random() * randomContent.content.length);
-          const { data } = await axios.get(`movies/find/${randomContent.content[idx]}`,
+          const { data } = await axios.get(`https://netflix-mern-backend.onrender.com/api/movies/find/${randomContent.content[idx]}`,
         {
           headers: {
             token:
