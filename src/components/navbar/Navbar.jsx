@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   const handleAdminPanelClick = () => {
-    window.location.href = "http://localhost:4000"; // Redirect to admin panel
+    window.location.href = "https://netflix-admin-eight.vercel.app"; // Redirect to admin panel
   };
   
   return (
